@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+  "name": "highlight Words",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_popup" : "popup.html",
+    "default_icon": "logo-mini.png"
+  },
+
+  "permissions": [
+    "tabs",
+    "storage"
+  ],
+
+  "background": {
+    "scripts": ["scripts/background.js"]
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["scripts/content.js"]
+    }
+  ]
+}

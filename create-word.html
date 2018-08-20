@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style/create-word--page.css">
+    <link rel="stylesheet" href="style/style.css">
+    <script type="text/javascript" src="scripts/Lib.js" ></script>
+    <title>Title</title>
+</head>
+<body>
+
+<h2 class="title">Добавление слова</h2>
+
+<form method="post">
+
+    <div class="lineWordColor">
+        <input id="word" type="text" name="word" class="word" placeholder="Введите слово">
+        <div id="out_color" class="color">Выберите цвет</div>
+    </div>
+
+    <div id="picker" class="picker" id="primary_block" >
+
+        <div id="line">
+            <div id="arrows">
+                <div class="left_arrow"></div>
+                <div class="right_arrow"></div>
+            </div>
+        </div>
+
+        <div id="block_picker">
+
+            <img src="https://lh3.googleusercontent.com/-8Dm4nhAOssQ/T_IqwyIFXmI/AAAAAAAAACA/4QKmS7s_otE/s256/bgGradient.png" class="bk_img"><div class="circle" id="circle"></div>
+        </div>
+    </div>
+
+</form>
+<div id="addNewWord" class="button">Добавить</div>
+<a href="/words.html" class="back">Назад</a>
+
+<script src="scripts/addWords.js"></script>
+<script src="scripts/picker.js"></script>
+</body>
+</html>
